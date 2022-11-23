@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:WoL.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="WoL.ConfigurationPage"
+             x:DataType="vm:ConfigurationPageViewModel">
+  <ContentPage.BindingContext>
+    <vm:ConfigurationPageViewModel />
+  </ContentPage.BindingContext>
+  <ContentPage.Behaviors>
+    <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding LoadedCommand}" />
+    <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}" />
+  </ContentPage.Behaviors>
+  <VerticalStackLayout Margin="16,16,16,16">
+    <Label Text="Broadcast Address" />
+    <Entry VerticalTextAlignment="End" HorizontalTextAlignment="End"
+           IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" ClearButtonVisibility="WhileEditing"
+           Keyboard="Text"
+           Text="{Binding BroadcastAddress}" />
+
+    <Label Text="Port" />
+    <Entry VerticalTextAlignment="End" HorizontalTextAlignment="End"
+           IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" ClearButtonVisibility="WhileEditing"
+           Keyboard="Numeric"
+           Text="{Binding Port}" />
+
+    <Label Text="MAC Address" />
+    <Entry VerticalTextAlignment="End" HorizontalTextAlignment="End"
+           IsTextPredictionEnabled="False" IsSpellCheckEnabled="False" ClearButtonVisibility="WhileEditing"
+           Keyboard="Text" TextTransform="Uppercase"
+           Text="{Binding MacAddress}" />
+    
+    <Grid Margin="0,32,0,0" HorizontalOptions="End">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="auto" />
+      </Grid.ColumnDefinitions>
+
+      <Button Grid.Column="0" WidthRequest="128" Text="Save" Command="{Binding SaveCommand}" />
+    </Grid>
+  </VerticalStackLayout>
+</ContentPage>

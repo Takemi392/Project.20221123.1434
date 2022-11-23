@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:WoL.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="WoL.MainPage"
+             x:DataType="vm:MainPageViewModel">
+  <ContentPage.BindingContext>
+    <vm:MainPageViewModel />
+  </ContentPage.BindingContext>
+  <ContentPage.Behaviors>
+    <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding LoadedCommand}" />
+    <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}" />
+  </ContentPage.Behaviors>
+
+  <Grid Margin="32,32,32,32">
+    <ImageButton Source="Images/button_send_magic_packet.png"
+                 VerticalOptions="Center" HorizontalOptions="Center"
+                 Command="{Binding SendMagicPacketCommand}" />
+  </Grid>
+</ContentPage>
