@@ -57,10 +57,16 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
+    <AndroidKeyStore>False</AndroidKeyStore>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>myapp.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass></AndroidSigningKeyPass>
+    <AndroidSigningStorePass></AndroidSigningStorePass>
   </PropertyGroup>
 
   <ItemGroup>
