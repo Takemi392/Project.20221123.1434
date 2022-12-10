@@ -7,6 +7,7 @@ MAUIで作ってるからiOSも動くかもしれない。
 
 ## Development
 + Windows 11 Pro
++ Pixel 7
 + Visual Studio 2022
 + .NET 7
 + .NET MAUI
@@ -14,6 +15,9 @@ MAUIで作ってるからiOSも動くかもしれない。
 ## Target Platform
 + Windows 11
 + Android 13 \(Minimum\)
+
+## Download
+[GooglePlay](https://play.google.com/store/apps/details?id=com.takemi.x392.wol)
 
 ## License
 [MIT](https://github.com/Takemi392/Project.20221123.1434/blob/main/LICENSE)
