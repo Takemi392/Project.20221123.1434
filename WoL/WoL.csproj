@@ -41,23 +41,28 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-maccatalyst|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android33.0|AnyCPU'">
     <ApplicationId>com.takemi.x392.wol</ApplicationId>
     <AndroidKeyStore>False</AndroidKeyStore>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android33.0|AnyCPU'">
@@ -67,6 +72,7 @@
     <AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass></AndroidSigningKeyPass>
     <AndroidSigningStorePass></AndroidSigningStorePass>
+    <ApplicationDisplayVersion>1.0.1</ApplicationDisplayVersion>
   </PropertyGroup>
 
   <ItemGroup>

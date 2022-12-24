@@ -18,6 +18,11 @@ namespace WoL.ViewModels
     [RelayCommand]
     private void Loaded()
     {
+      var startupMagicPacket = Preferences.Get(nameof(ConfigurationPageViewModel.StartupMagicPacket), false);
+      if (startupMagicPacket)
+      {
+        this.SendMagicPacket();
+      }
     }
 
     [RelayCommand]

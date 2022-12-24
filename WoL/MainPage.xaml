@@ -13,7 +13,7 @@
     <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}" />
   </ContentPage.Behaviors>
 
-  <Grid Margin="32,32,32,32">
+  <Grid>
     <ImageButton Source="Images/button_send_magic_packet.png"
                  VerticalOptions="Center" HorizontalOptions="Center"
                  Command="{Binding SendMagicPacketCommand}" />
