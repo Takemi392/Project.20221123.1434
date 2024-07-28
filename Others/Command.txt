@@ -1,2 +1,2 @@
 # Release用
-dotnet publish -f:net7.0-android33.0 -c:Release /p:AndroidSigningKeyPass=mypassword /p:AndroidSigningStorePass=mypassword
+dotnet publish -f:net8.0-android34.0 -c:Release /p:AndroidSigningKeyPass=mypassword /p:AndroidSigningStorePass=mypassword
