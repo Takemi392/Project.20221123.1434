@@ -4,13 +4,14 @@
              xmlns:vm="clr-namespace:WoL.ViewModels"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="WoL.ConfigurationPage"
+             x:Name="Page"
              x:DataType="vm:ConfigurationPageViewModel">
   <ContentPage.BindingContext>
     <vm:ConfigurationPageViewModel />
   </ContentPage.BindingContext>
   <ContentPage.Behaviors>
-    <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding LoadedCommand}" />
-    <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding AppearingCommand}" />
+    <toolkit:EventToCommandBehavior EventName="Loaded" Command="{Binding BindingContext.LoadedCommand, Source={x:Reference Page}}" />
+    <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding BindingContext.AppearingCommand, Source={x:Reference Page}}" />
   </ContentPage.Behaviors>
   <VerticalStackLayout Margin="16,16,16,16">
     <Grid>
